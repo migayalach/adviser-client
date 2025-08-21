@@ -10,8 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@heroui/accordion": "^2.2.21",
+    "@heroui/avatar": "^2.2.20",
     "@heroui/button": "2.2.24",
+    "@heroui/card": "^2.2.23",
     "@heroui/code": "2.2.18",
+    "@heroui/image": "^2.2.15",
     "@heroui/input": "2.4.25",
     "@heroui/kbd": "2.2.19",
     "@heroui/link": "2.2.21",
