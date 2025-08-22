@@ -1,56 +1,38 @@
-import { Card, CardHeader, CardBody } from "@heroui/card";
-import { Image } from "@heroui/image";
 import React from "react";
+import { Cards } from "@/src/components";
+
+const services = [
+  {
+    id: "1S",
+    title: "Planification financiera",
+    image:
+      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1755872105/adviser/dnqcnhfofwsleh8x2eei.png",
+  },
+  {
+    id: "2S",
+    title: "Inversion Segura",
+    image:
+      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1755872102/adviser/yxhivnlijjmpw85rzllb.jpg",
+  },
+  {
+    id: "3S",
+    title: "Educacion Financiera",
+    image:
+      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1755872108/adviser/ax80l8p3z5k2kyumn3v7.jpg",
+  },
+];
 
 function Services() {
   return (
     <div>
       <h1>Servicios y Asesorias</h1>
-      <Card className="py-4">
-        <CardBody className="overflow-visible py-2">
-          <Image
-            alt="Card background"
-            className="object-cover rounded-xl"
-            src="https://heroui.com/images/hero-card-complete.jpeg"
-            width={270}
-          />
-        </CardBody>
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <p className="text-tiny uppercase font-bold">Daily Mix</p>
-          <small className="text-default-500">12 Tracks</small>
-          <h4 className="font-bold text-large">Frontend Radio</h4>
-        </CardHeader>
-      </Card>
-      <Card className="py-4">
-        <CardBody className="overflow-visible py-2">
-          <Image
-            alt="Card background"
-            className="object-cover rounded-xl"
-            src="https://heroui.com/images/hero-card-complete.jpeg"
-            width={270}
-          />
-        </CardBody>
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <p className="text-tiny uppercase font-bold">Daily Mix</p>
-          <small className="text-default-500">12 Tracks</small>
-          <h4 className="font-bold text-large">Frontend Radio</h4>
-        </CardHeader>
-      </Card>
-      <Card className="py-4">
-        <CardBody className="overflow-visible py-2">
-          <Image
-            alt="Card background"
-            className="object-cover rounded-xl"
-            src="https://heroui.com/images/hero-card-complete.jpeg"
-            width={270}
-          />
-        </CardBody>
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <p className="text-tiny uppercase font-bold">Daily Mix</p>
-          <small className="text-default-500">12 Tracks</small>
-          <h4 className="font-bold text-large">Frontend Radio</h4>
-        </CardHeader>
-      </Card>
+      {services.map(({ id, title, image }, index) => {
+        return (
+          <div key={index}>
+            <Cards id={id} title={title} image={image} />
+          </div>
+        );
+      })}
     </div>
   );
 }
