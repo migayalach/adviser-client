@@ -1,69 +1,46 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
+import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
+import { feedBack } from "@/src/mocks";
 
 function FeedBack() {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  const [loading, setLoading] = useState<any>([]);
+  const [current, setCurrent] = useState<number>(5);
+
+  const changeElements = () => {
+    alert("+5");
+  };
+
+  useEffect(() => {
+    for (let i = 0; i < current; i++) {
+      const element = feedBack[i];
+      loading.push(element);
+    }
+    setCurrent(current + 5);
+  }, []);
 
   return (
     <div>
       <h1>FeedBack</h1>
-      <Accordion selectionMode="multiple">
-        <AccordionItem
-          key="1"
-          aria-label="Chung Miller"
-          startContent={
-            <Avatar
-              isBordered
-              color="primary"
-              radius="lg"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-            />
-          }
-          subtitle="4 unread messages"
-          title="Chung Miller"
-        >
-          {defaultContent}
-        </AccordionItem>
-        <AccordionItem
-          key="2"
-          aria-label="Janelle Lenard"
-          startContent={
-            <Avatar
-              isBordered
-              color="success"
-              radius="lg"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-            />
-          }
-          subtitle="3 incompleted steps"
-          title="Janelle Lenard"
-        >
-          {defaultContent}
-        </AccordionItem>
-        <AccordionItem
-          key="3"
-          aria-label="Zoey Lang"
-          startContent={
-            <Avatar
-              isBordered
-              color="warning"
-              radius="lg"
-              src="https://i.pravatar.cc/150?u=a04258114e29026702d"
-            />
-          }
-          subtitle={
-            <p className="flex">
-              2 issues to<span className="text-primary ml-1">fix now</span>
-            </p>
-          }
-          title="Zoey Lang"
-        >
-          {defaultContent}
-        </AccordionItem>
-      </Accordion>
+      {loading?.map(({ id, name, comment, image }: any) => (
+        <Accordion selectionMode="multiple" defaultExpandedKeys={[id]} key={id}>
+          <AccordionItem
+            key={id}
+            aria-label={name}
+            startContent={
+              <Avatar isBordered color="warning" radius="lg" src={image} />
+            }
+            title={name}
+          >
+            {comment}
+          </AccordionItem>
+        </Accordion>
+      ))}
+      <Button color="primary" onClick={changeElements}>
+        Cargar mas
+      </Button>
     </div>
   );
 }
