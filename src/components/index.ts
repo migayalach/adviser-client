@@ -5,5 +5,17 @@ import Courses from "./Courses";
 import FeedBack from "./FeedBack";
 import Footer from "./Footer";
 import Services from "./Services";
+import Cards from "./Cards";
+import Buttons from "./Buttons";
 
-export { Profile, AboutMe, Contact, Courses, FeedBack, Footer, Services };
+export {
+  Profile,
+  AboutMe,
+  Contact,
+  Courses,
+  FeedBack,
+  Footer,
+  Services,
+  Cards,
+  Buttons,
+};
