@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Services from "./Services";
 import Cards from "./Cards";
 import Buttons from "./Buttons";
+import Networks from "./Networks";
 
 export {
   Profile,
@@ -18,4 +19,5 @@ export {
   Services,
   Cards,
   Buttons,
+  Networks,
 };
