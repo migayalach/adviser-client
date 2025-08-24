@@ -1,21 +1,21 @@
 import {
   Profile,
   AboutMe,
-  Contact,
   Courses,
   FeedBack,
   Services,
+  Networks,
 } from "@/src/components";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="flex flex-col justify-center">
       <Profile />
       <AboutMe />
       <Services />
       <Courses />
       <FeedBack />
-      <Contact />
+      <Networks />
     </section>
   );
 }
