@@ -1,24 +1,15 @@
-import { Image } from "@heroui/image";
 import React from "react";
-import { Cards, Buttons } from "@/src/components";
-
-const courses = [
-  {
-    id: "1C",
-    title: "Binance Desde Cero",
-    image:
-      "https://res.cloudinary.com/dqgcyonb9/image/upload/v1755873891/adviser/qopth7xbtcccblghjksp.jpg",
-  },
-];
+import { Cards } from "@/src/components";
+import { courses } from "@/src/mocks";
 
 function Courses() {
   return (
-    <div>
-      <h1>Cursos</h1>
-      {courses.map(({ id, title, image }, index) => {
+    <div className="bg-[#111827] pt-4 pb-7">
+      <h1 className="text-[#fff] text-[22px] text-center font-semibold">Cursos</h1>
+      {courses?.map(({ id, title, image }, index) => {
         return (
           <div key={index}>
-            <Cards id={id} title={title} image={image} />
+            <Cards id={id} title={title} image={image} path="courses"/>
           </div>
         );
       })}
