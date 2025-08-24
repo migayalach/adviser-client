@@ -7,23 +7,38 @@ import { feedBack } from "@/src/mocks";
 
 function FeedBack() {
   const [loading, setLoading] = useState<any>([]);
-  const [current, setCurrent] = useState<number>(5);
+  const [current, setCurrent] = useState<any>({
+    init: 0,
+    end: 5,
+  });
+  const [disable, setDisable] = useState<boolean>(false);
+  const size = feedBack.length;
 
-  const changeElements = () => {
-    alert("+5");
-  };
-
-  useEffect(() => {
-    for (let i = 0; i < current; i++) {
+  const loadingElements = () => {
+    for (let i = current.init; i < current.end; i++) {
       const element = feedBack[i];
       loading.push(element);
     }
-    setCurrent(current + 5);
+    setCurrent({
+      init: current.init + 5,
+      end: current.end + 5,
+    });
+    if (current.end === size) {
+      setDisable(true);
+    }
+  };
+
+  const changeElements = () => {
+    loadingElements();
+  };
+
+  useEffect(() => {
+    loadingElements();
   }, []);
 
   return (
-    <div>
-      <h1>FeedBack</h1>
+    <div className="bg-[#fff] py-4 px-4 flex flex-col justify-center items-center">
+      <h1 className="text-[22px] font-sans">FeedBack</h1>
       {loading?.map(({ id, name, comment, image }: any) => (
         <Accordion selectionMode="multiple" defaultExpandedKeys={[id]} key={id}>
           <AccordionItem
@@ -38,7 +53,7 @@ function FeedBack() {
           </AccordionItem>
         </Accordion>
       ))}
-      <Button color="primary" onClick={changeElements}>
+      <Button className="mt-5" color="primary" onClick={changeElements} isDisabled={disable}>
         Cargar mas
       </Button>
     </div>
