@@ -1,25 +1,22 @@
 import React from "react";
-import { Card, CardHeader, CardBody } from "@heroui/card";
-import { Image } from "@heroui/image";
+import { Picture } from "@/src/components";
+import "@/src/styles/text.css";
 
 function Profile() {
   return (
-    <Card className="bg-[#fff] p-4">
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src="https://res.cloudinary.com/dqgcyonb9/image/upload/v1755834589/adviser/q2ucn06zvmhyjd0cjb30.png"
-          width="auto"
-        />
-      </CardBody>
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <div className="flex flex-col items-center justify-center">
-        <h1 className="font-bold text-large text-[33px] mt-2">Stephani Bustillos</h1>
-        <p className="text-tiny font-bold text-[19px] mt-6">Asesor Financiero</p>
-        </div>
-      </CardHeader>
-    </Card>
+    <div className="container-one-light flex flex-col justify-center items-center p-6 ">
+      <Picture
+        alt="profile"
+        src="https://res.cloudinary.com/dqgcyonb9/image/upload/v1756093211/adviser/k60zvdp1dnx0hnqsanp4.jpg"
+        width="auto"
+      />
+      <h1 className="text-family color-text-light font-bold text-[33px] italic pt-2">
+        Stephani Bustillos
+      </h1>
+      <p className="text-family color-text-light font-semibold text-[23px] mt-1 italic">
+        Asesor Financiero
+      </p>
+    </div>
   );
 }
 
