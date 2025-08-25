@@ -1,11 +1,13 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Lilita_One, Roboto } from "next/font/google";
 
-export const fontSans = FontSans({
+export const lilitaOne = Lilita_One({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: "400",
+  variable: "--font-lilita-one",
 });
 
-export const fontMono = FontMono({
+export const robotoText = Roboto({
   subsets: ["latin"],
-  variable: "--font-mono",
+  weight: ["200"],
+  variable: "--font-roboto-text",
 });
