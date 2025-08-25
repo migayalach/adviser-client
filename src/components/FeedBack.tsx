@@ -4,6 +4,7 @@ import { Accordion, AccordionItem } from "@heroui/accordion";
 import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
 import { feedBack } from "@/src/mocks";
+import "@/src/styles/text.css";
 
 function FeedBack() {
   const [loading, setLoading] = useState<any>([]);
@@ -37,25 +38,39 @@ function FeedBack() {
   }, []);
 
   return (
-    <div className="bg-[#fff] py-4 px-4 flex flex-col justify-center items-center">
-      <h1 className="text-[22px] font-sans">FeedBack</h1>
-      {loading?.map(({ id, name, comment, image }: any) => (
-        <Accordion selectionMode="multiple" defaultExpandedKeys={[id]} key={id}>
-          <AccordionItem
-            key={id}
-            aria-label={name}
-            startContent={
-              <Avatar isBordered color="warning" radius="lg" src={image} />
-            }
-            title={name}
-          >
-            {comment}
-          </AccordionItem>
+    <div className="container-one-light py-4 px-4 flex flex-col justify-center items-center mb-24">
+      <h1 className="text-family text-[27px] font-semibold text-center">
+        ¿Que opina la gente de nosotros?
+      </h1>
+      <div className="cart-light flex flex-col items-center justify-center rounded-lg pt-4 px-3">
+        <Accordion
+          className="acordion-light rounded-xl px-4"
+          selectionMode="multiple"
+          defaultExpandedKeys={["1user"]}
+        >
+          {loading?.map(({ id, name, comment, image }: any) => (
+            <AccordionItem
+              className="text-family-second text-color-light leading-7"
+              key={id}
+              aria-label={name}
+              startContent={
+                <Avatar isBordered color="warning" radius="lg" src={image} />
+              }
+              title={<span className="font-medium tracking-wide">{name}</span>}
+            >
+              {<p className="mt-[-10px]">{comment}</p>}
+            </AccordionItem>
+          ))}
         </Accordion>
-      ))}
-      <Button className="mt-5" color="primary" onClick={changeElements} isDisabled={disable}>
-        Cargar mas
-      </Button>
+        <Button
+          className="button-color-light my-5 text-[18px]"
+          color="primary"
+          onClick={changeElements}
+          isDisabled={disable}
+        >
+          Cargar mas
+        </Button>
+      </div>
     </div>
   );
 }
