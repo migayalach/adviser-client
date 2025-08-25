@@ -1,0 +1,43 @@
+.text-family {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-family-second {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.container-one-light {
+  background-color: #fff;
+  color: #1d2711;
+}
+
+.container-two-light {
+  background-color: #111827;
+  color: #fff;
+}
+
+.text-color-light {
+  color: #111827;
+}
+
+.button-color-services-light {
+  background-color: #e1c49c;
+  color: #111827;
+}
+
+.cart-light {
+  background-color: #d9d9d9;
+}
+
+.acordion-light {
+  background-color: #e1c49c;
+}
+
+.button-color-light {
+  background-color: #1db688;
+  color: #fff;
+}
+
+.contact-color-light {
+  background-color: #fee3e5;
+}
