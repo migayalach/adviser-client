@@ -8,6 +8,7 @@ import Services from "./Services";
 import Cards from "./Cards";
 import Buttons from "./Buttons";
 import Networks from "./Networks";
+import Picture from "./Picture";
 
 export {
   Profile,
@@ -20,4 +21,5 @@ export {
   Cards,
   Buttons,
   Networks,
+  Picture,
 };
