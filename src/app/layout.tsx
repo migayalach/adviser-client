@@ -2,7 +2,7 @@ import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import { lilitaOne } from "@/config/fonts";
 import { Navbar } from "@/src/components/navbar";
 import "@/src/styles/globals.css";
 import { Footer } from "@/src/components";
@@ -31,13 +31,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="es">
       <head />
       <body
-      // className={clsx(
-      //   "min-h-screen text-foreground bg-background font-sans antialiased",
-      //   fontSans.variable
-      // )}
+        className={clsx(
+          "min-h-screen text-foreground bg-background font-sans antialiased",
+          lilitaOne.variable
+        )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div
