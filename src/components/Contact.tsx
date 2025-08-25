@@ -1,18 +1,19 @@
 import React from "react";
 import { Button } from "@heroui/button";
+import "@/src/styles/text.css";
 
 function Contact() {
   return (
-    <div className="p-4">
-      <div className="flex flex-col text-center items-center justify-center bg-[#1DB688] p-3">
-        <h1 className="text-[26px]">¡Hablemos!</h1>
-        <p className="text-[15px] my-3">
+    <div className="contact-color-light relative -top-20 p-1 rounded-xl">
+      <div className="button-color-light flex flex-col text-center items-center justify-center p-2 rounded-xl">
+        <h1 className="text-family text-[27px] font-semibold">¡Hablemos!</h1>
+        <p className="text-family-second text-[16px] leading-6">
           Contáctame para iniciar tu proyecto de desarrollo web y hacer realidad
           tu visión.
         </p>
-        <Button color="secondary">
-          Contacto
-          <i>
+        <Button className="contact-color-light my-2">
+          <span className="text-color-light font-medium">Contacto</span>
+          <i className="text-color-light">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
