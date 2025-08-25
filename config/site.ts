@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Stephani Bustillos",
+  description:
+    "Asesoría financiera personalizada para ayudarte a organizar, invertir y hacer crecer tu patrimonio con seguridad y confianza.",
   navItems: [
     {
       label: "Home",
