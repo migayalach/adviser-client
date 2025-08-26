@@ -48,10 +48,10 @@ function FeedBack() {
           selectionMode="multiple"
           defaultExpandedKeys={["1user"]}
         >
-          {loading?.map(({ id, name, comment, image }: any) => (
+          {loading?.map(({ id, name, comment, image }: any, index: number) => (
             <AccordionItem
               className="text-family-second text-color-light leading-7"
-              key={id}
+              key={index}
               aria-label={name}
               startContent={
                 <Avatar isBordered color="warning" radius="lg" src={image} />
