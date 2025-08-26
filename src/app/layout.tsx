@@ -6,6 +6,7 @@ import { lilitaOne } from "@/config/fonts";
 import { Navbar } from "@/src/components/navbar";
 import "@/src/styles/globals.css";
 import { Footer } from "@/src/components";
+import WhatsappButton from "../components/WhatsappButton";
 
 export const metadata: Metadata = {
   title: {
@@ -40,20 +41,13 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div
-          // className="relative flex flex-col h-screen"
-          >
+          <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main
-            // className="container mx-auto max-w-7xl pt-6 px-6 flex-grow"
-            >
+            <main className="container mx-auto max-w-7xl flex-grow">
               {children}
             </main>
-            <footer
-            // className="w-full flex items-center justify-center py-3"
-            >
-              <Footer />
-            </footer>
+            <WhatsappButton />
+            <footer className="w-full">{/* <Footer /> */}</footer>
           </div>
         </Providers>
       </body>
