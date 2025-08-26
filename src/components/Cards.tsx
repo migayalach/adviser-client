@@ -22,12 +22,11 @@ function Cards({ id, title, image }: InputCards) {
           height="220px"
         />
       </CardBody>
-      {/* TODO - ARREGLAR BUTTON */}
       <CardHeader className="pb-0 py-2 px-4 flex-col items-center">
         <h2 className="text-family-second text-color-light font-medium text-[20px] mb-2">
           {title}
         </h2>
-        <Buttons id={id} />
+        <Buttons id={id} url="service"/>
       </CardHeader>
     </Card>
   );
