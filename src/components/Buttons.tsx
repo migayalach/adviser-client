@@ -3,10 +3,20 @@ import { Button } from "@heroui/button";
 import Link from "next/link";
 import "@/src/styles/text.css";
 
-function Buttons({ id }: { id: string }) {
+type Url = "service" | "course";
+
+interface InputButton {
+  id: string;
+  url: Url;
+}
+
+function Buttons({ id, url }: InputButton) {
+  console.log(url);
   return (
     <Button className="text-[18px] button-color-services-light">
-      <Link href={`/${id}`}>Saber más</Link>
+      <Link href={url === "course" ? `/course/${id}` : `/service/${id}`}>
+        Saber más
+      </Link>
     </Button>
   );
 }
