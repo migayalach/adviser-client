@@ -11,8 +11,8 @@ function Courses() {
         return (
           <div key={index}>
             <Picture alt={title} src={image} width="auto" />
-            <br/>
-            <Buttons id={id} />
+            <br />
+            <Buttons id={id} url="course" />
           </div>
         );
       })}
