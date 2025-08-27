@@ -1,11 +1,9 @@
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { lilitaOne } from "@/config/fonts";
 import { Navbar } from "@/src/components/navbar";
 import "@/src/styles/globals.css";
-import { Footer } from "@/src/components";
 import WhatsappButton from "../components/WhatsappButton";
 
 export const metadata: Metadata = {
@@ -40,16 +38,14 @@ export default function RootLayout({
           lilitaOne.variable
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl flex-grow">
-              {children}
-            </main>
-            <WhatsappButton />
-            <footer className="w-full">{/* <Footer /> */}</footer>
-          </div>
-        </Providers>
+        <div className="relative flex flex-col">
+          <Navbar />
+          <main className="container mx-auto max-w-7xl flex-grow">
+            {children}
+          </main>
+          <WhatsappButton />
+          <footer className="w-full"></footer>
+        </div>
       </body>
     </html>
   );
