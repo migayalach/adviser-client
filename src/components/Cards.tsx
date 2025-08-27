@@ -12,7 +12,7 @@ interface InputCards {
 
 function Cards({ id, title, image }: InputCards) {
   return (
-    <Card className="cart-light mt-4 py-2">
+    <Card className="cart-light mt-4 py-2 md:h-96 md:w-96">
       <CardBody className="overflow-visible py-2">
         <Image
           alt={title}
@@ -23,7 +23,7 @@ function Cards({ id, title, image }: InputCards) {
         />
       </CardBody>
       <CardHeader className="pb-0 py-2 px-4 flex-col items-center">
-        <h2 className="text-family-second text-color-light font-medium text-[20px] mb-2">
+        <h2 className="text-family-second text-color-light font-medium text-[20px] mb-2 md:text-[30px]">
           {title}
         </h2>
         <Buttons id={id} url="service"/>

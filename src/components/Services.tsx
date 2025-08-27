@@ -5,17 +5,19 @@ import "@/src/styles/text.css";
 
 function Services() {
   return (
-    <div className="container-one-light p-5">
-      <h1 className="text-[27px] text-center font-semibold mb-2">
+    <div className="container-one-light p-5 md:flex md:flex-col">
+      <h1 className="text-[27px] text-center md:text-[40px] font-semibold mb-2">
         Servicios y Asesorias
       </h1>
-      {services?.map(({ id, title, image }, index) => {
-        return (
-          <div key={index}>
-            <Cards id={id} title={title} image={image} />
-          </div>
-        );
-      })}
+      <div className="md:flex md:flex-row md:justify-evenly md: items-center md:py-4">
+        {services?.map(({ id, title, image }, index) => {
+          return (
+            <div key={index}>
+              <Cards id={id} title={title} image={image} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

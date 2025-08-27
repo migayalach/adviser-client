@@ -5,15 +5,15 @@ import "@/src/styles/text.css";
 
 function Networks() {
   return (
-    <div className="container-two-light text-family px-4 text-center">
+    <div className="container-two-light text-family px-4 text-center md:flex md:flex-col md:justify-center md:items-center">
       <Contact />
       <div className="flex flex-col justify-center mt-[-50px] mb-3">
         <div>
-          <h1 className="text-[27px] font-semibold">
+          <h1 className="text-[27px] font-semibold md:text-[40px]">
             Da el primer paso hacia tus metas financieras
           </h1>
         </div>
-        <div className="flex flex-row justify-evenly my-6">
+        <div className="flex flex-row justify-evenly my-6 md:py-4">
           <button>
             <a
               href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
