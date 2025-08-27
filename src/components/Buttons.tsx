@@ -11,7 +11,6 @@ interface InputButton {
 }
 
 function Buttons({ id, url }: InputButton) {
-  console.log(url);
   return (
     <Button className="text-[18px] button-color-services-light">
       <Link href={url === "course" ? `/course/${id}` : `/service/${id}`}>
