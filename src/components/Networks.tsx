@@ -16,7 +16,7 @@ function Networks() {
         <div className="flex flex-row justify-evenly my-6">
           <button>
             <a
-              href="https://www.facebook.com/profile.php?id=61576909845787"
+              href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ function Networks() {
 
           <button>
             <a
-              href="https://www.linkedin.com/in/stephani-ingrid-bustillos-vela-4b0b11199/"
+              href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,7 +52,7 @@ function Networks() {
 
           <button>
             <a
-              href="https://www.tiktok.com/@stephani_bustillos"
+              href={process.env.NEXT_PUBLIC_TIKTOK_URL}
               target="_blank"
               rel="noopener noreferrer"
             >

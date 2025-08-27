@@ -1,10 +1,9 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
 import "@/src/styles/whatsapp-button.css";
 
 function WhatsappButton() {
-  const phoneNumber = "59175718683";
+  const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
   const message = "Hola, quiero más información";
 
   return (

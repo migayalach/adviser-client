@@ -15,7 +15,7 @@ function Contact() {
           <span className="text-color-light font-medium">Contacto</span>
           <i className="text-color-light">
             <a
-              href="mailto:ayalachavezmiguel@example.com?subject=Curso%20Binance%20desde%200&body=Escribe%20tu%20mensaje%20aquí"
+              href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}.com?subject=Curso%20Binance%20desde%200&body=Curso%20Binance%20mensaje%20desde%200`}
               target="_blank"
               rel="noopener noreferrer"
             >
