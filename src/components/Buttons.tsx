@@ -1,14 +1,8 @@
 import React from "react";
 import { Button } from "@heroui/button";
+import { InputButton } from "@/types";
 import Link from "next/link";
 import "@/src/styles/text.css";
-
-type Url = "service" | "course";
-
-interface InputButton {
-  id: string;
-  url: Url;
-}
 
 function Buttons({ id, url }: InputButton) {
   return (
