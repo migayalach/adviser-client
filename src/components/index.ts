@@ -9,6 +9,7 @@ import Cards from "./Cards";
 import Buttons from "./Buttons";
 import Networks from "./Networks";
 import Picture from "./Picture";
+import Loading from "./Loading";
 
 export {
   Profile,
@@ -22,4 +23,5 @@ export {
   Buttons,
   Networks,
   Picture,
+  Loading,
 };
