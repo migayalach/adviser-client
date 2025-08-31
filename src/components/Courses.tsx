@@ -5,8 +5,13 @@ import "@/src/styles/text.css";
 
 function Courses() {
   return (
-    <div className="container-two-light flex flex-col justify-center items-center text-center p-4 md:py-10">
-      <h1 className="text-[27px] text-center font-semibold mb-2 md:text-[40px]">Cursos</h1>
+    <div
+      id="courses"
+      className="container-two-light flex flex-col justify-center items-center text-center p-4 md:py-10"
+    >
+      <h1 className="text-[27px] text-center font-semibold mb-2 md:text-[40px]">
+        Cursos
+      </h1>
       {courses?.map(({ id, title, image }, index) => {
         return (
           <div key={index} className="md:w-[550px]">

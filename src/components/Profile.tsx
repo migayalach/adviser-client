@@ -4,7 +4,10 @@ import "@/src/styles/text.css";
 
 function Profile() {
   return (
-    <div className="container-one-light flex flex-col justify-center items-center p-6">
+    <div
+      id="about-me"
+      className="container-one-light flex flex-col justify-center items-center p-6"
+    >
       <div className="md:w-96">
         <Picture
           alt="profile"

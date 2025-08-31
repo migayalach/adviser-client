@@ -38,7 +38,10 @@ function FeedBack() {
   }, []);
 
   return (
-    <div className="container-one-light py-4 px-4 flex flex-col justify-center items-center mb-24">
+    <div
+      id="feedback"
+      className="container-one-light py-4 px-4 flex flex-col justify-center items-center mb-24"
+    >
       <h1 className="text-family text-[27px] font-semibold text-center md:text-[40px] md:mb-8">
         ¿Que opina la gente de nosotros?
       </h1>
@@ -54,11 +57,25 @@ function FeedBack() {
               key={index}
               aria-label={name}
               startContent={
-                <Avatar className="md:h-16 md:w-16" isBordered color="warning" radius="lg" src={image} />
+                <Avatar
+                  className="md:h-16 md:w-16"
+                  isBordered
+                  color="warning"
+                  radius="lg"
+                  src={image}
+                />
               }
-              title={<span className="font-medium tracking-wide md:text-[22px]">{name}</span>}
+              title={
+                <span className="font-medium tracking-wide md:text-[22px]">
+                  {name}
+                </span>
+              }
             >
-              {<p className="mt-[-10px] md:text-[20px] md:leading-12">{comment}</p>}
+              {
+                <p className="mt-[-10px] md:text-[20px] md:leading-12">
+                  {comment}
+                </p>
+              }
             </AccordionItem>
           ))}
         </Accordion>

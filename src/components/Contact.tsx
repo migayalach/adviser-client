@@ -4,7 +4,10 @@ import "@/src/styles/text.css";
 
 function Contact() {
   return (
-    <div className="contact-color-light relative -top-20 p-1 rounded-xl md:w-[1100px]">
+    <div
+      id="contact"
+      className="contact-color-light relative -top-20 p-1 rounded-xl md:w-[1100px]"
+    >
       <div className="button-color-light flex flex-col text-center items-center justify-center p-2 rounded-xl md:flex md:flex-row md:justify-around md:items-center md:h-60">
         <h1 className="text-family text-[27px] font-semibold md:text-[40px]">
           ¡Hablemos!
@@ -14,7 +17,9 @@ function Contact() {
           tu visión.
         </p>
         <Button className="contact-color-light my-2 md:h-14">
-          <span className="text-color-light font-medium md:text-[25px]">Contacto</span>
+          <span className="text-color-light font-medium md:text-[25px]">
+            Contacto
+          </span>
           <i className="text-color-light">
             <a
               href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}.com?subject=Curso%20Binance%20desde%200&body=Curso%20Binance%20mensaje%20desde%200`}
