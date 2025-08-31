@@ -4,7 +4,8 @@ import "@/src/styles/whatsapp-button.css";
 
 function WhatsappButton() {
   const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
-  const message = "Hola, quiero más información";
+  const message =
+    "Hola, quiero más información sobre los servicios disponibles.";
 
   return (
     <a

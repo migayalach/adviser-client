@@ -3,15 +3,19 @@ import React, { use, useEffect, useState } from "react";
 import { Picture } from "@/src/components";
 import { services } from "@/src/mocks";
 import "@/src/styles/text.css";
+import { PropsService } from "@/types";
 
-interface Props {
-  params: Promise<{ idService: string }>;
+interface Info {
+  id: string;
+  title: string;
+  image: string;
+  about: string;
 }
 
-function page({ params }: Props) {
+function page({ params }: PropsService) {
   const { idService } = use(params);
 
-  const [info, setInfo] = useState<any>({
+  const [info, setInfo] = useState<Info>({
     id: "",
     title: "",
     image: "",
@@ -22,10 +26,10 @@ function page({ params }: Props) {
     if (idService) {
       const data = services.find((index) => index.id === idService);
       setInfo({
-        id: data?.id,
-        title: data?.title,
-        image: data?.image,
-        about: data?.about,
+        id: data?.id || "",
+        title: data?.title || "",
+        image: data?.image || "",
+        about: data?.about || "",
       });
     }
     return () => {

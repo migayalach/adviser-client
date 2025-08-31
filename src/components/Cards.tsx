@@ -2,13 +2,8 @@ import React from "react";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
 import { Buttons } from "@/src/components";
+import { InputCards } from "@/types";
 import "@/src/styles/text.css";
-
-interface InputCards {
-  id: string;
-  title: string;
-  image: string;
-}
 
 function Cards({ id, title, image }: InputCards) {
   return (
@@ -26,7 +21,7 @@ function Cards({ id, title, image }: InputCards) {
         <h2 className="text-family-second text-color-light font-medium text-[20px] mb-2 md:text-[30px]">
           {title}
         </h2>
-        <Buttons id={id} url="service"/>
+        <Buttons id={id} url="service" />
       </CardHeader>
     </Card>
   );

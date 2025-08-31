@@ -2,20 +2,17 @@
 import React, { use, useEffect, useState } from "react";
 import { Picture, Loading } from "@/src/components";
 import { courses } from "@/src/mocks";
+import { PropsCourse } from "@/types";
+import { ICourse } from "@/types/course.types";
 import "@/src/styles/text.css";
 
-interface Props {
-  params: Promise<{ idCourse: string }>;
-}
-
-function page({ params }: Props) {
+function page({ params }: PropsCourse) {
   const { idCourse } = use(params);
-
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<ICourse | null>(null);
 
   useEffect(() => {
     if (idCourse) {
-      const course = courses.find((index) => index.id === idCourse);
+      const course = courses.find((index) => index.id === idCourse) as ICourse;
       setData(course);
     }
   }, [idCourse]);

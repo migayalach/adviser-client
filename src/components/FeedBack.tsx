@@ -6,9 +6,21 @@ import { Avatar } from "@heroui/avatar";
 import { feedBack } from "@/src/mocks";
 import "@/src/styles/text.css";
 
+interface Current {
+  init: number;
+  end: number;
+}
+
+interface FeedBack {
+  id: string;
+  name: string;
+  comment: string;
+  image: string;
+}
+
 function FeedBack() {
-  const [loading, setLoading] = useState<any>([]);
-  const [current, setCurrent] = useState<any>({
+  const [loading, setLoading] = useState<FeedBack[]>([]);
+  const [current, setCurrent] = useState<Current>({
     init: 0,
     end: 5,
   });
