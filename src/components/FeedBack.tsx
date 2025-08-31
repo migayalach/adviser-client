@@ -38,11 +38,14 @@ function FeedBack() {
   }, []);
 
   return (
-    <div className="container-one-light py-4 px-4 flex flex-col justify-center items-center mb-24">
-      <h1 className="text-family text-[27px] font-semibold text-center">
+    <div
+      id="feedback"
+      className="container-one-light py-4 px-4 flex flex-col justify-center items-center mb-24"
+    >
+      <h1 className="text-family text-[27px] font-semibold text-center md:text-[40px] md:mb-8">
         ¿Que opina la gente de nosotros?
       </h1>
-      <div className="cart-light flex flex-col items-center justify-center rounded-lg pt-4 px-3">
+      <div className="cart-light flex flex-col items-center justify-center rounded-lg pt-4 px-3 md:w-[800px]">
         <Accordion
           className="acordion-light rounded-xl px-4"
           selectionMode="multiple"
@@ -54,16 +57,30 @@ function FeedBack() {
               key={index}
               aria-label={name}
               startContent={
-                <Avatar isBordered color="warning" radius="lg" src={image} />
+                <Avatar
+                  className="md:h-16 md:w-16"
+                  isBordered
+                  color="warning"
+                  radius="lg"
+                  src={image}
+                />
               }
-              title={<span className="font-medium tracking-wide">{name}</span>}
+              title={
+                <span className="font-medium tracking-wide md:text-[22px]">
+                  {name}
+                </span>
+              }
             >
-              {<p className="mt-[-10px]">{comment}</p>}
+              {
+                <p className="mt-[-10px] md:text-[20px] md:leading-12">
+                  {comment}
+                </p>
+              }
             </AccordionItem>
           ))}
         </Accordion>
         <Button
-          className="button-color-light my-5 text-[18px]"
+          className="button-color-light my-5 text-[18px] md:text-[25px] md:h-14"
           color="primary"
           onClick={changeElements}
           isDisabled={disable}
