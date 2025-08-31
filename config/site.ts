@@ -6,50 +6,24 @@ export const siteConfig = {
     "Asesoría financiera personalizada para ayudarte a organizar, invertir y hacer crecer tu patrimonio con seguridad y confianza.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Perfil",
+      href: "#about-me",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Servicios",
+      href: "#services",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Cursos",
+      href: "#courses",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Comentarios",
+      href: "#feedback",
     },
     {
-      label: "About",
-      href: "/about",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
+      label: "Contacto",
+      href: "#contact",
     },
   ],
 };
