@@ -10,9 +10,9 @@ import {
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
-import { siteConfig } from "@/config/site";
-import { HomeIcon } from "@/src/components/icons";
-import "@/src/styles/text.css";
+import { siteConfig } from "@config/site";
+import { HomeIcon } from "@/components/icons";
+import "@/styles/text.css";
 
 export const Navbar = () => {
   return (

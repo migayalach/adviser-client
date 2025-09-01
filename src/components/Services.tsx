@@ -1,7 +1,7 @@
 import React from "react";
-import { Cards } from "@/src/components";
-import { services } from "@/src/mocks";
-import "@/src/styles/text.css";
+import { Cards } from "@/components";
+import { services } from "@/mocks";
+import "@/styles/text.css";
 
 function Services() {
   return (

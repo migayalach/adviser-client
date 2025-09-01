@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
-import { Buttons } from "@/src/components";
+import { Buttons } from "@/components";
 import { InputCards } from "@/types";
-import "@/src/styles/text.css";
+import "@/styles/text.css";
 
 function Cards({ id, title, image }: InputCards) {
   return (

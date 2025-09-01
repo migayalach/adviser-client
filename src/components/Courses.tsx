@@ -1,7 +1,7 @@
 import React from "react";
-import { Picture, Buttons } from "@/src/components";
-import { courses } from "@/src/mocks";
-import "@/src/styles/text.css";
+import { Picture, Buttons } from "@/components";
+import { courses } from "@/mocks";
+import "@/styles/text.css";
 
 function Courses() {
   return (

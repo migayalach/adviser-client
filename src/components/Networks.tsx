@@ -1,7 +1,6 @@
-import { Link } from "@heroui/link";
 import React from "react";
 import Contact from "./Contact";
-import "@/src/styles/text.css";
+import "@/styles/text.css";
 
 function Networks() {
   return (

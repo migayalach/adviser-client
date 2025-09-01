@@ -1,10 +1,9 @@
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import { siteConfig } from "@/config/site";
-import { lilitaOne } from "@/config/fonts";
-import { Navbar } from "@/src/components/navbar";
-import "@/src/styles/globals.css";
-import WhatsappButton from "../components/WhatsappButton";
+import { siteConfig } from "@config/site";
+import { lilitaOne } from "@config/fonts";
+import { Navbar, WhatsappButton } from "@/components";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {

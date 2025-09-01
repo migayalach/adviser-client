@@ -1,5 +1,5 @@
 import React from "react";
-import "@/src/styles/text.css";
+import "@/styles/text.css";
 
 function AboutMe() {
   return (

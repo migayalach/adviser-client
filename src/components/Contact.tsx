@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@heroui/button";
-import "@/src/styles/text.css";
+import "@/styles/text.css";
 
 function Contact() {
   return (
