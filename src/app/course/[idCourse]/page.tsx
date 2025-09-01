@@ -1,10 +1,10 @@
 "use client";
 import React, { use, useEffect, useState } from "react";
-import { Picture, Loading } from "@/src/components";
-import { courses } from "@/src/mocks";
+import { Picture, Loading } from "@/components";
+import { courses } from "@/mocks";
 import { PropsCourse } from "@/types";
 import { ICourse } from "@/types/course.types";
-import "@/src/styles/text.css";
+import "@/styles/text.css";
 
 function page({ params }: PropsCourse) {
   const { idCourse } = use(params);

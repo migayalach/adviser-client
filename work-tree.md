@@ -15,23 +15,52 @@
             └── 📁integration
                 ├── integration.test.ts
             └── 📁unit
-                ├── unit.test.ts
+                ├── aboutMe.test.tsx
+                ├── buttons.test.tsx
+                ├── footer.test.tsx
+                ├── loading.test.tsx
+                ├── navbar.test.tsx
+                ├── picture.test.tsx
+                ├── whatsappBtn.test.tsx
         └── 📁app
-            └── 📁about
-                ├── page.tsx
+            └── 📁course
+                └── 📁[idCourse]
+                    ├── page.tsx
+            └── 📁service
+                └── 📁[idService]
+                    ├── page.tsx
             ├── layout.tsx
             ├── page.tsx
-            ├── providers.tsx
         └── 📁components
-            ├── counter.tsx
+            ├── AboutMe.tsx
+            ├── Buttons.tsx
+            ├── Cards.tsx
+            ├── Contact.tsx
+            ├── Courses.tsx
+            ├── FeedBack.tsx
+            ├── Footer.tsx
             ├── icons.tsx
+            ├── index.ts
+            ├── Loading.tsx
             ├── navbar.tsx
-            ├── primitives.ts
-            ├── theme-switch.tsx
+            ├── Networks.tsx
+            ├── Picture.tsx
+            ├── Profile.tsx
+            ├── Services.tsx
+            ├── WhatsappButton.tsx
+        └── 📁mocks
+            ├── courses.ts
+            ├── index.ts
+            ├── people.ts
+            ├── services.ts
         └── 📁styles
             ├── globals.css
+            ├── text.css
+            ├── whatsapp-button.css
     └── 📁types
+        ├── course.types.ts
         ├── index.ts
+    ├── .env
     ├── .gitignore
     ├── .npmrc
     ├── docker-compose.yml
@@ -47,5 +76,6 @@
     ├── postcss.config.js
     ├── README.md
     ├── tailwind.config.js
-    └── tsconfig.json
+    ├── tsconfig.json
+    └── work-tree.md
 ```

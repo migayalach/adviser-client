@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import { Button } from "@heroui/button";
 import { Avatar } from "@heroui/avatar";
-import { feedBack } from "@/src/mocks";
-import "@/src/styles/text.css";
+import { feedBack } from "@/mocks";
+import "@/styles/text.css";
 
 interface Current {
   init: number;

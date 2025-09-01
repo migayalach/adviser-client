@@ -1,8 +1,8 @@
 "use client";
 import React, { use, useEffect, useState } from "react";
-import { Picture } from "@/src/components";
-import { services } from "@/src/mocks";
-import "@/src/styles/text.css";
+import { Picture } from "@/components";
+import { services } from "@/mocks";
+import "@/styles/text.css";
 import { PropsService } from "@/types";
 
 interface Info {

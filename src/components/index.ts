@@ -10,6 +10,8 @@ import Buttons from "./Buttons";
 import Networks from "./Networks";
 import Picture from "./Picture";
 import Loading from "./Loading";
+import WhatsappButton from "./WhatsappButton";
+import { Navbar } from "./navbar";
 
 export {
   Profile,
@@ -24,4 +26,6 @@ export {
   Networks,
   Picture,
   Loading,
+  WhatsappButton,
+  Navbar,
 };

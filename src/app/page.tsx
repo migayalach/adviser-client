@@ -5,7 +5,7 @@ import {
   FeedBack,
   Services,
   Networks,
-} from "@/src/components";
+} from "@/components";
 
 export default function Home() {
   return (

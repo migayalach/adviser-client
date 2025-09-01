@@ -1,6 +1,6 @@
 import React from "react";
-import { Picture } from "@/src/components";
-import "@/src/styles/text.css";
+import { Picture } from "@/components";
+import "@/styles/text.css";
 
 function Profile() {
   return (
