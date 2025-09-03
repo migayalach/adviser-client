@@ -1,11 +1,11 @@
 ```
 └── 📁adviser-client
-    └── 📁.github
     └── 📁.vscode
         ├── settings.json
     └── 📁config
         ├── fonts.ts
         ├── site.ts
+    └── 📁cypress
     └── 📁public
         ├── favicon.ico
         ├── next.svg
@@ -13,15 +13,23 @@
     └── 📁src
         └── 📁__tests__
             └── 📁integration
-                ├── integration.test.ts
+                ├── cards.test.tsx
+                ├── courses.test.tsx
+                ├── networks.test.tsx
+                ├── profile.test.tsx
+                ├── services.test.tsx
             └── 📁unit
                 ├── aboutMe.test.tsx
                 ├── buttons.test.tsx
+                ├── contact.test.tsx
+                ├── feedback.test.tsx
                 ├── footer.test.tsx
                 ├── loading.test.tsx
                 ├── navbar.test.tsx
                 ├── picture.test.tsx
                 ├── whatsappBtn.test.tsx
+        └── 📁.github
+            └── 📁workflows
         └── 📁app
             └── 📁course
                 └── 📁[idCourse]
@@ -57,9 +65,9 @@
             ├── globals.css
             ├── text.css
             ├── whatsapp-button.css
-    └── 📁types
-        ├── course.types.ts
-        ├── index.ts
+        └── 📁types
+            ├── course.types.ts
+            ├── index.ts
     ├── .env
     ├── .gitignore
     ├── .npmrc
