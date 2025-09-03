@@ -4,7 +4,7 @@ import "@/styles/text.css";
 
 function Networks() {
   return (
-    <div className="container-two-light text-family px-4 text-center md:flex md:flex-col md:justify-center md:items-center">
+    <div id="networks" className="container-two-light text-family px-4 text-center md:flex md:flex-col md:justify-center md:items-center">
       <Contact />
       <div className="flex flex-col justify-center mt-[-50px] mb-3">
         <div>
