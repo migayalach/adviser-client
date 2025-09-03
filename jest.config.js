@@ -12,14 +12,15 @@ const customJestConfig = {
   },
   testEnvironment: "jsdom",
   transform: {
-    "^.+\\.(ts|tsx)$": [
-      "ts-jest",
-      {
-        useESM: true,
-      },
-    ],
+    "^.+\\.(ts|tsx)$": "ts-jest",
   },
-  extensionsToTreatAsEsm: [".ts", ".tsx"],
+  collectCoverage: false,
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx}",
+    "!src/**/*.d.ts",
+    "!src/**/__tests__/**",
+  ],
+  transformIgnorePatterns: ["/node_modules/"],
 };
 
 module.exports = createJestConfig(customJestConfig);

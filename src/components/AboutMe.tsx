@@ -3,7 +3,10 @@ import "@/styles/text.css";
 
 function AboutMe() {
   return (
-    <div className="container-two-light p-5 text-center md:p-8 md:h-[250px]">
+    <div
+      id="personal-skills"
+      className="container-two-light p-5 text-center md:p-8 md:h-[250px]"
+    >
       <h1 className="text-family text-[27px] md:text-[40px] mb-2 font-semibold">
         Conoce a Stephani
       </h1>

@@ -7,6 +7,7 @@ function Courses() {
   return (
     <div
       id="courses"
+      data-testid="courses-container"
       className="container-two-light flex flex-col justify-center items-center text-center p-4 md:py-10"
     >
       <h1 className="text-[27px] text-center font-semibold mb-2 md:text-[40px]">

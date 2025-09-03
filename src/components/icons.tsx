@@ -53,8 +53,8 @@ export const HomeIcon: React.FC<IconSvgProps> = ({
   ...props
 }) => (
   <svg
-    height={size || height}
-    width={size || width}
+    width={width || size}
+    height={height || size}
     viewBox="0 0 24 24"
     fill="none"
     {...props}
