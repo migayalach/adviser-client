@@ -15,6 +15,7 @@
             └── 📁integration
                 ├── cards.test.tsx
                 ├── courses.test.tsx
+                ├── home.test.tsx
                 ├── networks.test.tsx
                 ├── profile.test.tsx
                 ├── services.test.tsx
