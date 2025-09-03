@@ -18,6 +18,7 @@ function Networks() {
               href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +37,7 @@ function Networks() {
               href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Linkedin"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +56,7 @@ function Networks() {
               href={process.env.NEXT_PUBLIC_TIKTOK_URL}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Tiktok"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

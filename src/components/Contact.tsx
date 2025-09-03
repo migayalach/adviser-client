@@ -25,6 +25,7 @@ function Contact() {
               href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}.com?subject=Curso%20Binance%20desde%200&body=Curso%20Binance%20mensaje%20desde%200`}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Gmail"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
