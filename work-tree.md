@@ -6,6 +6,13 @@
         ├── fonts.ts
         ├── site.ts
     └── 📁cypress
+        └── 📁downloads
+        └── 📁e2e
+            ├── app.cy.ts
+            ├── courses.cy.ts
+            ├── services.cy.ts
+        └── 📁support
+            ├── e2e.ts
     └── 📁public
         ├── favicon.ico
         ├── next.svg
@@ -25,12 +32,16 @@
                 ├── contact.test.tsx
                 ├── feedback.test.tsx
                 ├── footer.test.tsx
+                ├── icons.test.tsx
                 ├── loading.test.tsx
                 ├── navbar.test.tsx
                 ├── picture.test.tsx
                 ├── whatsappBtn.test.tsx
         └── 📁.github
             └── 📁workflows
+                ├── ci-deply.yml
+                ├── ci-e2e.yml
+                ├── ci-link-test.yml
         └── 📁app
             └── 📁course
                 └── 📁[idCourse]
@@ -72,6 +83,7 @@
     ├── .env
     ├── .gitignore
     ├── .npmrc
+    ├── cypress.config.ts
     ├── docker-compose.yml
     ├── Dockerfile
     ├── eslint.config.mjs
