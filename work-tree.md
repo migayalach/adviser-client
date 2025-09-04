@@ -1,5 +1,11 @@
 ```
 └── 📁adviser-client
+    └── 📁.github
+        └── 📁workflows
+            ├── ci-deploy.yml
+            ├── ci-e2e.yml
+            ├── ci-link-test.yml
+            ├── pipeline-test.yml
     └── 📁.vscode
         ├── settings.json
     └── 📁config
@@ -37,11 +43,6 @@
                 ├── navbar.test.tsx
                 ├── picture.test.tsx
                 ├── whatsappBtn.test.tsx
-        └── 📁.github
-            └── 📁workflows
-                ├── ci-deply.yml
-                ├── ci-e2e.yml
-                ├── ci-link-test.yml
         └── 📁app
             └── 📁course
                 └── 📁[idCourse]
