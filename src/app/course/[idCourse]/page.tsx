@@ -6,7 +6,7 @@ import { PropsCourse } from "@/types";
 import { ICourse } from "@/types/course.types";
 import "@/styles/text.css";
 
-function page({ params }: PropsCourse) {
+function Page({ params }: PropsCourse) {
   const { idCourse } = use(params);
   const [data, setData] = useState<ICourse | null>(null);
 
@@ -79,4 +79,4 @@ function page({ params }: PropsCourse) {
   );
 }
 
-export default page;
+export default Page;

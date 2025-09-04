@@ -12,7 +12,7 @@ interface Info {
   about: string;
 }
 
-function page({ params }: PropsService) {
+function Page({ params }: PropsService) {
   const { idService } = use(params);
 
   const [info, setInfo] = useState<Info>({
@@ -64,4 +64,4 @@ function page({ params }: PropsService) {
   );
 }
 
-export default page;
+export default Page;
