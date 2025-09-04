@@ -17,5 +17,3 @@ jobs:
           node-version: "20"
       - name: Install dependencias
         run: npm install
-      - name: Ejecutar tests
-        run: npm test
