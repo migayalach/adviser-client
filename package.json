@@ -1,6 +1,23 @@
 {
-  "name": "next-app-template",
-  "version": "0.0.1",
+  "name": "adviser-client",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Miguel_Ayala_Chavez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migayalach/adviser-client"
+  },
+  "keywords": [
+    "node",
+    "next",
+    "heroUI",
+    "tailwind",
+    "jest",
+    "cypress",
+    "docker",
+    "github_actions"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -8,7 +25,8 @@
     "start": "next start",
     "lint": "eslint --fix",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test:e2e": "cypress open"
   },
   "dependencies": {
     "@heroui/accordion": "^2.2.21",
@@ -50,13 +68,14 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "20.5.7",
+    "@types/node": "^20.5.7",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@types/testing-library__react": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "8.34.1",
     "@typescript-eslint/parser": "8.34.1",
     "babel-jest": "^30.1.1",
+    "cypress": "^15.1.0",
     "eslint": "9.25.1",
     "eslint-config-next": "15.3.4",
     "eslint-config-prettier": "9.1.0",

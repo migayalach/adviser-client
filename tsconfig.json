@@ -23,7 +23,7 @@
       "@/*": ["./src/*"],
       "@config/*": ["./config/*"]
     },
-    "types": ["jest", "node"]
+    "types": ["jest", "node", "cypress"]
   },
   "include": [
     "next-env.d.ts",
