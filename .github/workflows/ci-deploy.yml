@@ -1,0 +1,32 @@
+# name: CD - Deploy
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v3
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
+
+#       - name: Login to Docker Hub
+#         uses: docker/login-action@v2
+#         with:
+#           username: ${{ secrets.DOCKER_USERNAME }}
+#           password: ${{ secrets.DOCKER_PASSWORD }}
+
+#       - name: Build Docker image
+#         run: docker build -t client-adviser:latest .
+
+#       - name: Push Docker image
+#         run: docker tag client-adviser:latest yourdockerhubusername/client-adviser:latest
+
+#       - name: Deploy to production
+#         run: echo "Aquí pones tu comando de despliegue según tu servidor o cloud"
