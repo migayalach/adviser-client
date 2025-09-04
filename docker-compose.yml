@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: client-adviser
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      NEXT_PUBLIC_PHONE_NUMBER: "59175260604"
+      NEXT_PUBLIC_FACEBOOK_URL: "https://www.facebook.com/profile.php?id=61576909845787"
+      NEXT_PUBLIC_TIKTOK_URL: "https://www.tiktok.com/@stephani_bustillos"
+      NEXT_PUBLIC_LINKEDIN_URL: "https://www.linkedin.com/in/stephani-ingrid-bustillos-vela-4b0b11199/"
+      NEXT_PUBLIC_GMAIL: "stephani.bustillos@gmail.com"
