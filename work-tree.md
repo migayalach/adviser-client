@@ -2,9 +2,7 @@
 └── 📁adviser-client
     └── 📁.github
         └── 📁workflows
-            ├── ci-deploy.yml
-            ├── ci-e2e.yml
-            ├── ci-link-test.yml
+            ├── deploy.yml
             ├── pipeline-test.yml
     └── 📁.vscode
         ├── settings.json
