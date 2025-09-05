@@ -1,54 +1,125 @@
-# Next.js & HeroUI Template
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+# Adviser client
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+Welcome! This project is a professional landing page developed in **Next.js** to showcase customer experiences covering various fields such as **Engineering, Economics y Finance**.
+  
+It features a modern design using **HeroUI + Tailwind CSS**, and a robust development workflow with **Jest, Cypress, Docker y GitHub Actions**
+## 🚀 Deployment
 
-## Technologies Used
+The project is deployed in Vercel:
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+👉 [https://adviser-client.vercel.app/](https://adviser-client.vercel.app/)
 
-## How to Use
+## Technologies
 
-### Use the template with create-next-app
+**Client:** Node, Next, HeroUI, Tailwind, Jest, Cypress, Docker, Github Actions
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Installation
+
+Clone the repository and install the dependencies:
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
+  git clone https://github.com/migayalach/adviser-client.git
+
+  npm install
 ```
 
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+Run in development:
 
 ```bash
-npm install
+  npm run dev
 ```
 
-### Run the development server
+Build for production:
 
 ```bash
-npm run dev
+  npm run build
+  npm start
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+Example of how to run unit and integration testing:
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
+  npm run test services.test
+  npm run test courses.test
+  npm run test feedback.test
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+Get coverage of the entire test:
 
-## License
+```bash
+  npm run test:coverage
+```
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
-# adviser-client
+Perform e2e testing with 'cypress':
+
+- First run the project with:
+
+```bash
+  npm run dev
+```
+
+- Step 2: Run the command:
+
+```bash
+  npm run test:e2e
+```
+## Choose testing E2E
+
+![App Screenshot](https://res.cloudinary.com/dqgcyonb9/image/upload/v1757038999/adviser/je5updugwyyprktvhrqr.png)
+
+
+## View Testing E2E
+
+![App Screenshot](https://res.cloudinary.com/dqgcyonb9/image/upload/v1757038999/adviser/wdsw3horlvq4x7kaqlhy.png)
+
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_PHONE_NUMBER`
+
+`NEXT_PUBLIC_FACEBOOK_URL`
+
+`NEXT_PUBLIC_TIKTOK_URL`
+
+`NEXT_PUBLIC_LINKEDIN_URL`
+
+`NEXT_PUBLIC_GMAIL`
+
+## 🐳 Docker
+
+You can run this project inside a Docker container, without having to install Node.js on your machine.
+
+### 1. Build the image
+
+Run in the root of the project:
+
+```bash
+docker build -t adviser-client .
+```
+
+### 2. Run the container
+```bash
+docker run -p 3000:3000 adviser-client
+```
+
+### 3. Run in background mode (optional)
+```bash
+docker run -d -p 3000:3000 adviser-client
+```
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-alpha-ten-78.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-ch%C3%A1vez-a-b51302288/)
+[![tiktok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@miguelondev)
+
+
+
+## 🚀 About Me
+I'm a full stack developer. If you need a software such as frontend, backend, database or advice you could writte: 
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayalachavezmiguel@gmail.com)
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/59175718683)
