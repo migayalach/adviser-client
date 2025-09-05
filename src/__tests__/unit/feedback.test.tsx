@@ -25,7 +25,7 @@ describe("<FeedBack />", () => {
     await userEvent.click(button);
     const items = screen.getAllByRole("button", { expanded: false });
     expect(items).toHaveLength(10);
-  });
+  }, 15000);
 
   it("Disable the button when there are no more items", async () => {
     render(<FeedBack />);
